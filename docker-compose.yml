@@ -1,0 +1,8 @@
+version: '3.6'
+services:
+  java:
+    build: ./docker/minecraft
+    ports:
+      - 25565:25565
+    volumes:
+      - /home/neso/.minecraft/server/:/home/USER/.minecraft
