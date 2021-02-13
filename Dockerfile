@@ -1,4 +1,4 @@
-FROM ubuntu:20.04
+FROM openjdk:8-jre
 RUN apt-get update
-RUN apt-get install -y openjdk-8-jre-headless 
 WORKDIR /usr/src
+USER 1000:1000

@@ -2,8 +2,7 @@ version: '3.8'
 services:
   minecraft:
     build: ./
-    command: /usr/bin/java -jar /var/minecraft/server/mohist-1.12.2-113-server.jar nogui
-    # command: /bin/ls /var/minecraft -alsh
+    command: java -jar /var/minecraft/server/mohist-1.12.2-113-server.jar nogui
     ports:
       - 25565:25565
     volumes:
