@@ -5,6 +5,7 @@ services:
     command: java -jar -Xmx8G /var/minecraft/mohist-1.12.2-113-server.jar nogui
     ports:
       - 25565:25565
+      - 8123:8123
     volumes:
       - /home/neso/.minecraft/server:/var/minecraft
     restart: always
